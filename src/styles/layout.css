@@ -1,0 +1,143 @@
+section {
+  padding: 1rem;
+}
+
+section + section {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+section > h2 {
+  margin: 0;
+}
+
+table {
+  font-variant-numeric: lining-nums tabular-nums;
+}
+html,
+body {
+  min-height: 100%;
+}
+
+body,
+#root {
+  height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#root > main {
+  flex: 1;
+}
+
+.app-footer {
+  min-height: 2rem;
+  background: #eee;
+}
+
+.list {
+  list-style: none;
+  margin: 1rem 0;
+  padding: 0;
+}
+.list .list-item {
+  display: flex;
+  margin: 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid #eee;
+  white-space: nowrap;
+}
+.list .amount {
+  font-variant-numeric: lining-nums tabular-nums;
+  display: inline-block;
+  min-width: 2rem;
+  text-align: right;
+  margin-right: 0.25em;
+}
+.list .amount:after {
+  content: '×';
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  color: #aaa;
+}
+.list .amount[title] {
+  cursor: help;
+}
+.list .name {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+.list .article-id {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 13px;
+  color: #888;
+}
+
+.list .date {
+  overflow: hidden;
+  font-size: 0.8rem;
+  margin: 0 0.5rem;
+  color: #888;
+}
+
+.btn-remove {
+  border: none;
+  background: #444;
+  color: #eee;
+  border-radius: 99px;
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 1;
+  padding: 0.2rem 0.5rem;
+}
+.btn-remove:hover {
+  background: #f60;
+}
+
+.product-articles {
+  color: #888;
+  /* border-top: 1px solid #eee; */
+  margin: 0;
+  list-style: none;
+  padding: 0.25rem 0.25rem 0.5rem 2rem;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+
+.product-articles > li {
+  padding: 0.1rem 0;
+  display: flex;
+  border-bottom: 1px dotted #eee;
+}
+.product-articles li:last-child {
+  border-bottom: none;
+}
+
+.product-articles .in-stock {
+}
+
+.dim {
+  color: #888;
+}
+
+.warning-block {
+  background: #ffcc0080;
+  padding: 0.1rem 0.8rem;
+  border-radius: 5px;
+  text-align: center;
+}
+.warning-bar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0.8rem;
+  opacity: 0.8;
+  background: #fc0;
+  font-size: 14px;
+  text-align: center;
+}

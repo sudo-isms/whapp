@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`queries: amendProductsInStock will calculate and amend amountInStock to a product 1`] = `
+Object {
+  "allIds": Array [
+    "a269a247-0d38-4b47-9630-79c9ae545b68",
+    "6fed6191-ee01-4563-a33d-5010abe0db36",
+  ],
+  "byId": Object {
+    "6fed6191-ee01-4563-a33d-5010abe0db36": Object {
+      "amountInStock": 1,
+      "articles": Array [
+        Object {
+          "amountRequired": 4,
+          "id": "0517f083-0e15-4876-8d1f-6fa45900431c",
+        },
+        Object {
+          "amountRequired": 1,
+          "id": "6892b98b-9b87-4520-9a9e-7528f1d78cb4",
+        },
+        Object {
+          "amountRequired": 8,
+          "id": "addc65a8-c759-41d8-a18a-89fe446ad484",
+        },
+      ],
+      "id": "6fed6191-ee01-4563-a33d-5010abe0db36",
+      "name": "Dining Table",
+    },
+    "a269a247-0d38-4b47-9630-79c9ae545b68": Object {
+      "amountInStock": 2,
+      "articles": Array [
+        Object {
+          "amountRequired": 4,
+          "id": "0517f083-0e15-4876-8d1f-6fa45900431c",
+        },
+        Object {
+          "amountRequired": 1,
+          "id": "831b92b8-677b-42cc-a585-335ea4ccccb6",
+        },
+        Object {
+          "amountRequired": 8,
+          "id": "addc65a8-c759-41d8-a18a-89fe446ad484",
+        },
+      ],
+      "id": "a269a247-0d38-4b47-9630-79c9ae545b68",
+      "name": "Dining Chair",
+    },
+  },
+}
+`;

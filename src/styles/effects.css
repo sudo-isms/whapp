@@ -1,0 +1,51 @@
+/* effects */
+
+.loading {
+  opacity: 0.666;
+  animation: heartbeat infinite 2s ease;
+  transform-origin: 50% 50%;
+}
+
+.pending-removal {
+  animation: pending-opacity 1s linear;
+}
+
+.error-removal {
+  animation: fadeout-error 3s linear forwards;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(0.88);
+  }
+  80% {
+    transform: scale(0.88);
+  }
+  100% {
+    transform: scale(0.99);
+  }
+}
+
+@keyframes pending-opacity {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.99;
+  }
+}
+
+@keyframes fadeout-error {
+  from {
+    background-color: #fc0;
+  }
+  to {
+    background-color: transparent;
+  }
+}
